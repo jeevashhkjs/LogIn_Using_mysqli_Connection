@@ -1,14 +1,14 @@
 <?php
 
-if(!isset($_POST['submit']))
+if(!isset($_GET['submit']))
 {
-    $name = $_POST['firstName'];
-    $psd = $_POST['psd'];
+    $name = $_GET['firstName'];
+    $psd = $_GET['psd'];
 
-    $fname = $_POST['fname'];
-    $lname = $_POST['lname'];
-    $passdw = $_POST['passdw'];
-    $repassdw = $_POST['repassdw'];
+    $fname = $_GET['fname'];
+    $lname = $_GET['lname'];
+    $passdw = $_GET['passdw'];
+    $repassdw = $_GET['repassdw'];
 
     $con = mysqli_connect("localhost","root","welcome","datas");
 
